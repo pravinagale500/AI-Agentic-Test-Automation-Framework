@@ -1,38 +1,65 @@
 # Dependencies
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+/node_modules
+package-lock.json
 
-# Environment variables
+# Environment and secrets
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
-# Build output
-dist/
-build/
+# Build outputs
+/dist
+/build
+*.tsbuildinfo
 
 # Logs
 *.log
-logs/
-log/
+error.log
+ai-client.log
+test-generator.log
+orchestrator.log
+rerun.log
+/logs
+/log
 
-# IDE specific files
-.vscode/
+# Test outputs
+/test-results
+/playwright-report
+/tests-examples
+/tests-results
+/coverage
+/reports
+*.test.result
+
+# IDE specific
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
 .idea/
 *.swp
 *.swo
+
+# OS specific
 .DS_Store
-
-# Test output
-test-results/
-playwright-report/
-coverage/
-
-# TypeScript
-*.tsbuildinfo
+Thumbs.db
 
 # Temporary files
-tmp/
-temp/
+/tmp
+/temp
+*.tmp
+*.temp
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Framework specific
+/generated-tests
+/generated-pom
+*.generated.ts
+browser-traces/
+/screenshots
+/videos
