@@ -1,0 +1,17 @@
+[
+  {
+    "tag": "login_products_listed",
+    "description": "Login and verify all products are listed by name",
+    "prompt": "Login with valid user (${CONFIG.USERNAME}/${CONFIG.PASSWORD}) on ${CONFIG.BASE_URL} and verify all products displayed with correct names"
+  },
+  {
+    "tag": "login_search_valid",
+    "description": "Login, search valid product and verify it appears",
+    "prompt": "Login with valid user (${CONFIG.USERNAME}/${CONFIG.PASSWORD}) on ${CONFIG.BASE_URL}, search for 'MacBook', verify product appears"
+  },
+  {
+    "tag": "login_search_invalid",
+    "description": "Login, search invalid product and verify no products found",
+    "prompt": "Login with valid user (${CONFIG.USERNAME}/${CONFIG.PASSWORD}) on ${CONFIG.BASE_URL}, search for 'InvalidProductXYZ', verify 'No products found' message"
+  }
+]

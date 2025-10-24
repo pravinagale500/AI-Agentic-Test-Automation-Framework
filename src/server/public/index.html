@@ -1,0 +1,57 @@
+<!-- Web UI HTML -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AI Test Runner</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; }
+    #logs { background: #111; color: #0f0; padding: 12px; height: 420px; overflow-y: scroll; white-space: pre-wrap; }
+    textarea, input, select { width: 100%; box-sizing: border-box; margin-top: 8px; }
+    button { margin-top: 8px; padding: 8px 12px; }
+  </style>
+</head>
+<body>
+  <h2>AI Test Runner</h2>
+
+  <label>Environment</label>
+  <select id="env">
+    <option value="qa">QA</option>
+    <option value="uat">UAT</option>
+    <option value="prod">Prod</option>
+  </select>
+
+  <label>Scenario Tag</label>
+  <input id="tag" placeholder="e.g. login_search_valid" />
+
+  <label>Prompt (scenario description)</label>
+  <textarea id="prompt" rows="4" placeholder="Describe scenario..."></textarea>
+
+  <button id="run">Run Scenario</button>
+
+  <h3>Live Logs</h3>
+  <div id="logs"></div>
+
+  <script>
+    const evtSource = new EventSource('/events');
+    const logs = document.getElementById('logs');
+
+    evtSource.onmessage = function(e) {
+      logs.textContent += e.data + "\\n";
+      logs.scrollTop = logs.scrollHeight;
+    };
+
+    document.getElementById('run').addEventListener('click', async () => {
+      const prompt = document.getElementById('prompt').value;
+      const tag = document.getElementById('tag').value;
+      const env = document.getElementById('env').value;
+      if (!prompt || !tag) { alert("prompt and tag required"); return; }
+      await fetch('/run', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt, tag, env })
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+2025-10-24T11:53:32.764Z [[32minfo[39m]: Attempt 1 of 2
+{
+  "tag": "login_search_valid",
+  "prompt": "Login with valid user (demo@opencart.com/demo123) on https://demo.opencart.com, search for 'MacBook'"
+}
+2025-10-24T11:53:32.765Z [[34mdebug[39m]: Generating test...
+{
+  "tag": "login_search_valid"
+}
+2025-10-24T11:53:38.151Z [[31merror[39m]: Test attempt 1 failed
+{
+  "tag": "login_search_valid",
+  "error": "Failed to generate test content",
+  "attempt": 1,
+  "totalAttempts": 2
+}
+2025-10-24T11:53:38.151Z [[32minfo[39m]: Regenerating test for next attempt
+{
+  "tag": "login_search_valid",
+  "nextAttempt": 2
+}
+2025-10-24T11:53:38.152Z [[32minfo[39m]: Attempt 2 of 2
+{
+  "tag": "login_search_valid",
+  "prompt": "Login with valid user (demo@opencart.com/demo123) on https://demo.opencart.com, search for 'MacBook'"
+}
+2025-10-24T11:53:38.153Z [[34mdebug[39m]: Generating test...
+{
+  "tag": "login_search_valid"
+}
+2025-10-24T11:53:43.105Z [[31merror[39m]: Test attempt 2 failed
+{
+  "tag": "login_search_valid",
+  "error": "Failed to generate test content",
+  "attempt": 2,
+  "totalAttempts": 2
+}
+2025-10-24T11:54:35.603Z [[32minfo[39m]: Attempt 1 of 2
+{
+  "tag": "login_search_valid",
+  "prompt": "Login with valid user (demo@opencart.com/demo123) on https://demo.opencart.com, search for 'MacBook'"
+}
+2025-10-24T11:54:35.604Z [[34mdebug[39m]: Generating test...
+{
+  "tag": "login_search_valid"
+}
+2025-10-24T11:54:48.357Z [[31merror[39m]: Test attempt 1 failed
+{
+  "tag": "login_search_valid",
+  "error": "Failed to generate test content",
+  "attempt": 1,
+  "totalAttempts": 2
+}
+2025-10-24T11:54:48.358Z [[32minfo[39m]: Regenerating test for next attempt
+{
+  "tag": "login_search_valid",
+  "nextAttempt": 2
+}
+2025-10-24T11:54:48.360Z [[32minfo[39m]: Attempt 2 of 2
+{
+  "tag": "login_search_valid",
+  "prompt": "Login with valid user (demo@opencart.com/demo123) on https://demo.opencart.com, search for 'MacBook'"
+}
+2025-10-24T11:54:48.361Z [[34mdebug[39m]: Generating test...
+{
+  "tag": "login_search_valid"
+}
+2025-10-24T11:55:00.109Z [[31merror[39m]: Test attempt 2 failed
+{
+  "tag": "login_search_valid",
+  "error": "Failed to generate test content",
+  "attempt": 2,
+  "totalAttempts": 2
+}

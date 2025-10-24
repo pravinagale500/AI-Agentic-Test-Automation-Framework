@@ -1,0 +1,10 @@
+{"duration":5345,"error":"Failed after 3 attempts","level":"error","message":"AI request failed","retries":3,"timestamp":"2025-10-24T11:53:38.147Z"}
+2025-10-24T11:53:38.149Z [[31merror[39m]: Test generation failed:
+{"duration":4943,"error":"Failed after 3 attempts","level":"error","message":"AI request failed","retries":3,"timestamp":"2025-10-24T11:53:43.102Z"}
+2025-10-24T11:53:43.104Z [[31merror[39m]: Test generation failed:
+2025-10-24T11:53:43.108Z [[31merror[39m]: Scenario login_search_valid failed: Test failed after 2 attempts: Failed to generate test content
+{"duration":12718,"error":"Failed after 3 attempts","level":"error","message":"AI request failed","retries":3,"timestamp":"2025-10-24T11:54:48.355Z"}
+2025-10-24T11:54:48.356Z [[31merror[39m]: Test generation failed:
+{"duration":11732,"error":"Failed after 3 attempts","level":"error","message":"AI request failed","retries":3,"timestamp":"2025-10-24T11:55:00.101Z"}
+2025-10-24T11:55:00.108Z [[31merror[39m]: Test generation failed:
+2025-10-24T11:55:00.111Z [[31merror[39m]: Scenario login_search_valid failed: Test failed after 2 attempts: Failed to generate test content
